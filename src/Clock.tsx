@@ -2,10 +2,7 @@ import React from 'react';
 import { ClockProps, ClockState } from './types';
 
 export class Clock extends React.Component<ClockProps, ClockState> {
-  private timerId?: number;
 
-  state: ClockState = {
-    currentTime: new Date().toUTCString().slice(-12, -4),
   };
 
   componentDidMount() {
